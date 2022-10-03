@@ -121,6 +121,7 @@ private _bum_fnc_curatorModuleActions = {
     //Restrict modules Curator can use
     //
     [_zeusCuratorModule, [
+	"ModuleRemoteControl_F",0,
     "Bum_ModuleForceRoute",0,
     "Bum_ModuleRemoteControl",0,
     "Bum_ModuleUnFuck",0,
@@ -131,7 +132,28 @@ private _bum_fnc_curatorModuleActions = {
     "ace_zeus_modulePatrolArea",0,
     "ace_zeus_moduleSearchArea",0,
     "ace_zeus_moduleSearchNearby",0,
-    "ace_zeus_moduleToggleFlashlight",0]] call BIS_fnc_curatorObjectRegisteredTable;
+	"ace_zeus_moduleGarrison",0,
+	"ace_zeus_moduleUnGarrison",0,
+    "ace_zeus_moduleToggleFlashlight",0,
+	"lambs_wp_ZeusTaskArtillery",0,
+	"lambs_wp_ZeusTaskArtilleryRegister",0,
+	"lambs_wp_ZeusTaskAssault",0,
+	"lambs_wp_ZeusTaskCamp",0,
+	"lambs_wp_ZeusTaskCQB",0,
+	"lambs_wp_ZeusTaskGarrison",0,
+	"lambs_wp_ZeusTaskPatrol",0,
+	"lambs_wp_ZeusTaskReset",0,
+    "lambs_danger_DisableAI",0,
+    "lambs_danger_DisableGroupAI",0,
+    "lambs_dangerSetRadio",0,
+    "zen_modules_moduleChatter",0,
+    "zen_modules_moduleConvoyParameters",0,
+    "zen_modules_moduleCrewToGunner",0,
+    "zen_modules_moduleFlyHeight",0,
+    "zen_modules_moduleGlobalHint",0,
+    "zen_modules_moduleToggleFlashlights",0,
+    "zen_modules_moduleToggleIRLasers",0,
+    "zen_remote_control_module",0]] call BIS_fnc_curatorObjectRegisteredTable;
 
     [_zeusCuratorModule, ["Edit", -1e10]] remoteExec ["setCuratorCoef",2]; //prevent zeus from moving units around. Executed on the server.
     [_zeusCuratorModule, ["Delete", -1e10]] remoteExec ["setCuratorCoef",2]; //gives error when zeus tries to remove stuff. Does not prevent it due to a bug.

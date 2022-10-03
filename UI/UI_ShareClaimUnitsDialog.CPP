@@ -15,7 +15,7 @@
 
 class Blindzeus_shareClaimUnitsDialog : Blindzeus_baseClasses{
 	idd = 58385;
-	onload = "[compile preprocessFileLineNumbers ""x\Bum\addons\BlindZeus\UI\UI_shareClaimUnitsDialog.sqf"", _this] call CBA_fnc_execNextFrame;";
+	onload = "[compile preprocessFileLineNumbers ""\Bum_BlindZeus_Beta4\UI\UI_shareClaimUnitsDialog.sqf"", _this] call CBA_fnc_execNextFrame;";
 	class controls {
 		class IGUIBack_2200: IGUIBack
 		{

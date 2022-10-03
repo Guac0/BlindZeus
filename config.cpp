@@ -1,3 +1,4 @@
+#include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
 	class Bum_BlindZeus
@@ -32,7 +33,7 @@ class CfgFunctions
 	{
 		class BlindZeus
 		{
-			file = "x\Bum\addons\BlindZeus\functions";
+			file = "\Bum_BlindZeus_Beta4\functions";
 			class startTargetStateMachine{};
 			class endTargetStateMachine{};
 			class targetCheck{};
@@ -50,7 +51,7 @@ class CfgFunctions
 		};
 		class BlindZeus_UI
 		{
-			file = "x\Bum\addons\BlindZeus\UI\functions";
+			file = "\Bum_BlindZeus_Beta4\UI\functions";
 			class createDialogVariables{};
 			class saveOrLoadPreviousDialogSettings{};
 			class createWaypointDialogAdditions{};
@@ -87,13 +88,13 @@ class CfgVehicles
 		scope = 2; // Editor visibility; 2 will show it in the menu, 1 will hide it.
 		scopeCurator = 1;
 		displayName = "Blindzeus"; // Name displayed in the menu
-		icon = "x\Bum\addons\BlindZeus\UI\Portraits\blindcurator.paa"; // Map icon. Delete this entry to use the default icon
+		icon = "\Bum_BlindZeus_Beta4\UI\Portraits\blindcurator.paa"; // Map icon. Delete this entry to use the default icon
 		category = "Curator";
 
 		// Name of function triggered once conditions are met
 		function = "Bum_fnc_moduleBlindzeus";
 		// Execution priority, modules with lower number are executed first. 0 is used when the attribute is undefined
-		functionPriority = 10;
+		functionPriority = 20;
 		// 0 for server only execution, 1 for global execution, 2 for persistent global execution
 		isGlobal = 1;
 		// 1 for module waiting until all synced triggers are activated
@@ -159,7 +160,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Force Route"; // Name displayed in the menu
 		//icon = "\myTag_addonName\data\iconNuke_ca.paa"; // Map icon. Delete this entry to use the default icon
-		portrait = "x\Bum\addons\BlindZeus\UI\Portraits\force_route.paa";
+		portrait = "\Bum_BlindZeus_Beta4\UI\Portraits\force_route.paa";
 		category = "Bum_BlindZeus";
 
 		// Name of function triggered once conditions are met
@@ -190,7 +191,7 @@ class CfgVehicles
 	class Bum_ModuleUnFuck: Bum_ModuleForceRoute
 	{
 		displayName = "UnFuck Vehicle"; // Name displayed in the menu
-		portrait = "x\Bum\addons\BlindZeus\UI\Portraits\Unfuck_vehicle.paa";
+		portrait = "\Bum_BlindZeus_Beta4\UI\Portraits\Unfuck_vehicle.paa";
 		category = "Bum_BlindZeusUtils";
 		function = "Bum_fnc_moduleUnFuck";
 		isDisposable = 1;
@@ -198,7 +199,7 @@ class CfgVehicles
 	class Bum_ModuleSetAISettings: Bum_ModuleForceRoute
 	{
 		displayName = "Set AI Settings"; // Name displayed in the menu
-		portrait = "x\Bum\addons\BlindZeus\UI\Portraits\setAiSettings.paa";
+		portrait = "\Bum_BlindZeus_Beta4\UI\Portraits\setAiSettings.paa";
 		category = "Bum_BlindZeusUtils";
 		function = "Bum_fnc_removeLogic"; //Remove the logic straightaway
 		curatorInfoType = "Blindzeus_setAISettingsDialog"; //This opens the dialog when the module is used. The dialog function is called by the dialog config.
@@ -207,7 +208,7 @@ class CfgVehicles
 	class Bum_ModuleShareClaimUnits: Bum_ModuleForceRoute
 	{
 		displayName = "Share or Claim Units"; // Name displayed in the menu
-		portrait = "x\Bum\addons\BlindZeus\UI\Portraits\share_units.paa";
+		portrait = "\Bum_BlindZeus_Beta4\UI\Portraits\share_units.paa";
 		category = "Bum_BlindZeusUtils";
 		functionPriority = 0;
 		function = "Bum_fnc_removeLogic"; //Remove the logic straightaway, save the placed position

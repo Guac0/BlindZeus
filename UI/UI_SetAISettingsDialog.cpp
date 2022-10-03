@@ -29,7 +29,7 @@
 
 class Blindzeus_setAISettingsDialog : Blindzeus_baseClasses{
 	idd = 38385;
-	onload = "_this call compile preprocessFileLineNumbers ""x\Bum\addons\BlindZeus\UI\UI_setAISettingsDialog.sqf""";
+	onload = "_this call compile preprocessFileLineNumbers ""\Bum_BlindZeus_Beta4\UI\UI_setAISettingsDialog.sqf""";
 	class controls {
 		class IGUIBack_2200: IGUIBack
 		{

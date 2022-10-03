@@ -16,7 +16,7 @@ class CfgHints
 			tip = "%2 You can press shift to give multiple waypoints, ESC to cancel <br/> %2 The vehicle will crash if waypoints tell it to<br/> %2 You can stop the vehicle by giving it a new waypoint, new forced route or removing the module<br/> %2 Vehicles tend to cut corners, tracked wont move if first waypoint is too close";
 			arguments[] = {};
 			// Optional image
-			image = "x\Bum\addons\BlindZeus\UI\Portraits\force_route.paa";
+			image = "\Bum_BlindZeus_Beta4\UI\Portraits\force_route.paa";
 			// optional parameter for not showing of image in context hint in mission (default false))
 			noImage = false;
 			// -1 Creates no log in player diary, 0 Creates diary log ( default when not provided )
@@ -31,7 +31,7 @@ class CfgHints
 			description = "Use the module on a tracked or wheeled vehicle. The vehicle is then made functional and controllable in Zeus.";
 			tip = "%2 You can change the behavior and requirements from CBA settings <br/> %2 Overturned vehicles can be unflipped and moved <br/> %2 Vehicle leadership and crew will be sorted to a functional state<br/> %2 Vehicle can be fixed/rearmed/refueled";
 			arguments[] = {};
-			image = "x\Bum\addons\BlindZeus\UI\Portraits\Unfuck_vehicle.paa";
+			image = "\Bum_BlindZeus_Beta4\UI\Portraits\Unfuck_vehicle.paa";
 		};
 		class StackableRemoteControl
 		{
@@ -46,7 +46,7 @@ class CfgHints
 			displayName = "Set AI Settings module";
 			displayNameShort = "Set usefull settings that change AI behaviour";
 			description = "Use this module by placing on top of vehicle or group. You can also place it anywhere empty and set settings for all editable objects.";
-			image = "x\Bum\addons\BlindZeus\UI\Portraits\setAiSettings.paa";
+			image = "\Bum_BlindZeus_Beta4\UI\Portraits\setAiSettings.paa";
 		};
 		class ShareOrClaimUnits
 		{
@@ -54,7 +54,7 @@ class CfgHints
 			displayNameShort = "Transfer unit Control to/from others";
 			description = "Use this module by placing it anywhere. You can then select one or more groups and empty vehicles to share with, or claim from other zeuses. Sharing allows others to edit the units. Claimig disallows others from interacting with them.";
 			tip = "%2 Use Shift or CTRL to select multiple groups/vehicles or Curators. <br/> %2 Groups are listed in order of distance from module position.<br/> %2 Only empty vehicles are listed. Manned vehicles are handled as a part of the group mannign them.";
-			image = "x\Bum\addons\BlindZeus\UI\Portraits\share_units.paa";
+			image = "\Bum_BlindZeus_Beta4\UI\Portraits\share_units.paa";
 		};
 	};
 };
