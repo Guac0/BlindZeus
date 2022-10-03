@@ -1,4 +1,0 @@
-//<'Bum_BlindZeus_Beta4.pbo' properties via Mikero's dos tools, dll version 8.35>
-prefix=Bum_BlindZeus_Beta4;
-//PboType=Arma Addon;
-//</properties>
